@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Review.scss";
 
 const Review = () => {
+  const [visible, setVisible] = useState(false);
+
   return (
     <div className="review">
       <div className="user">
@@ -18,8 +20,13 @@ const Review = () => {
           <br />
           다음에도 필요하면 또 여기서 시킬 것 같아요.
         </div>
-        <span className="reviewMainHandler" onClick={() => {}}>
-          더보기 ▼
+        <span
+          className="reviewMainHandler"
+          onClick={() => {
+            setVisible(!visible);
+          }}
+        >
+          {visible ? "더보기 ▼" : "접기 ▲"}
         </span>
       </div>
     </div>
