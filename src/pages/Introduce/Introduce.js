@@ -29,7 +29,7 @@ export default function Introduce() {
         </div>
         <div>
           <input type="text" onChange={HandleInput} />
-          <button type="submit" onClick={goToProduct}>
+          <button type="submit" onClick={(goToProduct, HandleButton)}>
             클릭
           </button>
           <Link to="/product">product 페이지로 이동</Link>

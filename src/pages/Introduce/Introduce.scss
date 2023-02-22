@@ -1,11 +1,12 @@
+@import "../../style/mixin.scss";
+@import "../../style/variables.scss";
+
 body {
-  display: flex;
-  justify-content: center;
+  @include flexCenter;
   margin-top: 260px;
 
   .introduce-wrapper {
-    display: flex;
-    justify-content: center;
+    @include flexCenter;
     width: 220px;
     height: 280px;
     border-radius: 10px;
@@ -26,12 +27,16 @@ body {
 
       .name {
         margin: 0;
-        font-size: 15px;
+        @include textStyle($size: 15px, $weight: 0px);
+
+        &:hover {
+          color: $green;
+        }
       }
 
       .generation {
         margin: 0;
-        font-size: 12px;
+        @include textStyle($size: 12px, $weight: 0px);
       }
     }
   }
