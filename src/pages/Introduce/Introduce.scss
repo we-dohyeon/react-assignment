@@ -1,0 +1,43 @@
+@import "../../style/mixin.scss";
+@import "../../style/variables.scss";
+
+body {
+  @include flexCenter;
+  margin-top: 260px;
+
+  .introduce-wrapper {
+    @include flexCenter;
+    width: 220px;
+    height: 280px;
+    border-radius: 10px;
+    border: 1px solid;
+
+    .introduce-box {
+      margin-top: 14px;
+      margin-left: 20px;
+    }
+
+    .profile {
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+    }
+    .information {
+      margin-bottom: 5px;
+
+      .name {
+        margin: 0;
+        @include textStyle($size: 15px, $weight: 0px);
+
+        &:hover {
+          color: $green;
+        }
+      }
+
+      .generation {
+        margin: 0;
+        @include textStyle($size: 12px, $weight: 0px);
+      }
+    }
+  }
+}
