@@ -1,6 +1,12 @@
+import { Link, useNavigate } from "react-router-dom";
 import "./Introduce.scss";
 
 export default function Introduce() {
+  const navigate = useNavigate();
+
+  const goToProduct = () => {
+    navigate(`/product`);
+  };
   const HandleInput = (evnet) => {
     console.log("input 태그 동작");
   };
@@ -23,9 +29,10 @@ export default function Introduce() {
         </div>
         <div>
           <input type="text" onChange={HandleInput} />
-          <button type="submit" onClick={HandleButton}>
+          <button type="submit" onClick={goToProduct}>
             클릭
           </button>
+          <Link to="/product">product 페이지로 이동</Link>
         </div>
       </div>
     </div>
