@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 260px;
+
+  .introduce-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid;
+
+    .introduce-box {
+      margin-top: 14px;
+    }
+
+    .profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 10px;
+    }
+
+    .name {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .generation {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+}
