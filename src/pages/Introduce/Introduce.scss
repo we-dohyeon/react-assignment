@@ -22,4 +22,18 @@
       font-weight: 800;
     }
   }
+  .introduce-input-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    .introduce-input {
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
+    .input-btn {
+      border-radius: 5px;
+      border: 1px solid black;
+    }
+  }
 }
