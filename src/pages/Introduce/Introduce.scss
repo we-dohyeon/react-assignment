@@ -1,0 +1,26 @@
+.introduce {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15%;
+  margin-left: 40%;
+
+  .introduceWrapper {
+    margin: 20px;
+
+    .company {
+      border-radius: 20px;
+      width: 100%;
+    }
+
+    .name {
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
