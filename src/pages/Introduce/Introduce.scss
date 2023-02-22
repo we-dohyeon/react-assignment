@@ -1,5 +1,5 @@
 @import "../../style/mixin.scss";
-@import url(../../style/variables.scss);
+@import "../../style/variables.scss";
 
 a {
   text-decoration: none;
@@ -25,8 +25,8 @@ a {
     flex-direction: column;
 
     .introduce-name {
-      font-size: 24px;
-      font-weight: 800;
+      @include textStyle;
+
       &:hover {
         color: $color-green;
       }
