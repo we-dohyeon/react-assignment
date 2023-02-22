@@ -1,0 +1,25 @@
+.introduceWrap {
+  border-right: 2px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 0.5px solid black;
+  display: inline-block;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px;
+
+  .introduce-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+  }
+  .introduce-text {
+    display: flex;
+    flex-direction: column;
+
+    .introduce-name {
+      font-size: 24px;
+      font-weight: 800;
+    }
+  }
+}
