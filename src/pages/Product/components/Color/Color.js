@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Color.scss";
 
 const Color = () => {
+  const [color, setColor] = useState("");
+
   return (
     <div className="color">
       <span className="colorText">
