@@ -4,6 +4,7 @@ import Introduce from "./pages/Introduce/Introduce";
 import ProductList from "./pages/ProductList/ProductList";
 import Product from "./pages/Product/Product";
 import Color from "./pages/Product/components/Color/Color";
+import Count from "./pages/Product/components/Count/Count";
 
 const Router = () => {
   return (
@@ -12,8 +13,8 @@ const Router = () => {
         <Route path="/" element={<Introduce />} />
         <Route path="/product" element={<Product />} />
         <Route path="/productList" element={<ProductList />} />
-        {/* <Route path="/review" element={<Review />} />
-        <Route path="/count" element={<Count />} /> */}
+        {/* <Route path="/review" element={<Review />} /> */}
+        <Route path="/count" element={<Count />} />
         <Route path="/color" element={<Color />} />
       </Routes>
     </BrowserRouter>
