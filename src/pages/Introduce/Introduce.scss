@@ -1,0 +1,49 @@
+@import "../../style/mixin.scss";
+@import "../../style/variables.scss";
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.introduceWrap {
+  border-right: 2px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 0.5px solid black;
+  display: inline-block;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px;
+
+  .introduce-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+  }
+  .introduce-text {
+    display: flex;
+    flex-direction: column;
+
+    .introduce-name {
+      @include textStyle;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+  }
+  .introduce-input-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    .introduce-input {
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
+    .input-btn {
+      border-radius: 5px;
+      border: 1px solid black;
+    }
+  }
+}
