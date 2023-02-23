@@ -6,4 +6,4 @@ import Color from "./pages/Product/components/Color/Color";
 import Count from "./pages/Product/components/Count/Count";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Count />);
+root.render(<Color />);
